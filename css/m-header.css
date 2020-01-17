@@ -937,6 +937,10 @@ a {
 
 /* 數據榜 */
 
+.m-dl-tab li a {
+    color: #999;
+}
+
 .m-dl-tab li.active {
     color: #ffd500;
     border-bottom: 1px solid #ffd500;
@@ -973,9 +977,10 @@ a {
     color: #eee;
 }
 
-.m-dl-tab a {
+
+/* .m-dl-tab a {
     color: #999;
-}
+} */
 
 .m-dl-cf-btn.active {
     color: #ffd500;

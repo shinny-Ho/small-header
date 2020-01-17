@@ -173,6 +173,90 @@
                         </div>
                     </div>
                 </div>
+                <div class="m-fs-slide-wrapper">
+                    <div class="m-fs-flex">
+                        <div class="m-fs-date-time"><span>01/15</span><span>08:30</span></div>
+                        <div class="m-fs-name text-overflow">NBA</div>
+                    </div>
+                    <div class="m-fs-item-flex">
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">洛杉磯湖人</div>
+                        </div>
+                        <div class="m-fs-teamscore">
+                            <div class="m-fs-score">99</div>
+                            <div class="m-fs-dash">-</div>
+                            <div class="m-fs-score">99</div>
+                        </div>
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">金洲勇士</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-fs-slide-wrapper">
+                    <div class="m-fs-flex">
+                        <div class="m-fs-date-time"><span>01/15</span><span>08:30</span></div>
+                        <div class="m-fs-name text-overflow">NBA</div>
+                    </div>
+                    <div class="m-fs-item-flex">
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">洛杉磯湖人</div>
+                        </div>
+                        <div class="m-fs-teamscore">
+                            <div class="m-fs-score">99</div>
+                            <div class="m-fs-dash">-</div>
+                            <div class="m-fs-score">99</div>
+                        </div>
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">金洲勇士</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-fs-slide-wrapper">
+                    <div class="m-fs-flex">
+                        <div class="m-fs-date-time"><span>01/15</span><span>08:30</span></div>
+                        <div class="m-fs-name text-overflow">NBA</div>
+                    </div>
+                    <div class="m-fs-item-flex">
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">洛杉磯湖人</div>
+                        </div>
+                        <div class="m-fs-teamscore">
+                            <div class="m-fs-score">99</div>
+                            <div class="m-fs-dash">-</div>
+                            <div class="m-fs-score">99</div>
+                        </div>
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">金洲勇士</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-fs-slide-wrapper">
+                    <div class="m-fs-flex">
+                        <div class="m-fs-date-time"><span>01/15</span><span>08:30</span></div>
+                        <div class="m-fs-name text-overflow">NBA</div>
+                    </div>
+                    <div class="m-fs-item-flex">
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">洛杉磯湖人</div>
+                        </div>
+                        <div class="m-fs-teamscore">
+                            <div class="m-fs-score">99</div>
+                            <div class="m-fs-dash">-</div>
+                            <div class="m-fs-score">99</div>
+                        </div>
+                        <div class="m-fs-teamname-flex">
+                            <div class="m-fs-team-img"><img src="/img/group.svg"></div>
+                            <div class="m-fs-teamname text-overflow">金洲勇士</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -226,7 +310,7 @@
         </div>
         <div class="m-dl-content">
             <div class="m-dl-tab m-overflow">
-                <ul class="tabs">
+                <ul class="m-dl-tabs-list">
                     <li><a href="#tab1">西部聯盟</a></li>
                     <li><a href="#tab2">東部聯盟</a></li>
                     <li><a href="#tab3">得分榜</a></li>
@@ -276,6 +360,7 @@
                             <div class="m-dl-tab-content-winlose flex-width2"><span>24</span>/<span>4</span>/<span>3</span></div>
                             <div class="m-dl-tab-content-integral flex-width1">40</div>
                         </div>
+
                     </div>
                 </div>
                 <div class="m-dl-tab-content-area2" id="tab2">
@@ -670,12 +755,12 @@
             $('.m-dl-tab').each(function() {
                 // 目前的頁籤區塊
                 var $tab = $(this);
-                var $defaultLi = $('ul.tabs li', $tab).eq(_showTab).addClass('active');
+                var $defaultLi = $('ul.m-dl-tabs-list li', $tab).eq(_showTab).addClass('active');
                 $($defaultLi.find('a').attr('href')).siblings().hide();
 
                 // 當 li 頁籤被點擊時...
                 // 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
-                $('ul.tabs li', $tab).click(function() {
+                $('ul.m-dl-tabs-list li', $tab).click(function() {
                     // 找出 li 中的超連結 href(#id)
                     var $this = $(this),
                         _clickTab = $this.find('a').attr('href');
