@@ -60,7 +60,7 @@ a {
     height: 50px;
     width: 100%;
     background-color: #000;
-    background-image: url(/img/m-header.jpg);
+    background-image: url(img/m-header.jpg);
     background-position: center;
     background-size: cover;
     z-index: 98;
